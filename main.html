@@ -8,59 +8,36 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	 <form action="#" method="POST">
-        <!-- <h2>Signup Form</h2> -->
-
-        <!-- Name Field -->
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-        <!-- Email Field -->
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <!-- Gender Field -->
-        <label for="gender">Gender</label>
-        <select id="gender" name="gender" required>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select>
-
-        <!-- Car Brands Field -->
-        <label for="car-brand">Car Brands</label>
-        <select id="car-brand" name="car-brand" required>
-            <option value="toyota">Toyota</option>
-            <option value="ford">Ford</option>
-            <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
-            <option value="chevrolet">Chevrolet</option>
-        </select>
-
-        <!-- Age Field -->
-        <label for="age">Age</label>
-        <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="100" required>
-
-        <!-- Date of Birth Field -->
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob" required>
-
-        <!-- Phone Number Field -->
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
-
-        <!-- Password Field -->
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-
-        <!-- TOS Checkbox -->
-        <label class="terms-text">
-            <input type="checkbox" id="tos" name="tos" required> I agree to the <a href="#">Terms of Service</a>
-        </label>
-
-        <!-- Submit Button -->
-        <button type="submit">Submit</button>
-    </form>
+	 <form method="POST">
+		 <label for="name">Name</label>
+		 <input type="text" required id="name" placeholder="Name"><br>
+		 <label for="email">Email</label>
+		 <input type="email" required id="email" placeholder="Email"><br>
+		 Gender
+		 <input type="radio" required id="gender_m" name="gender">
+		 <label for="gender_m">Male</label>
+		<input type="radio" required id="gender_f" name="gender">
+	    <label for="gender_f">Female</label><br>
+		<label for="cars">Car Brands</label>
+		<select required id="cars" placeholder="--Please choose an option--">
+			<option value="--Please choose an option--">--Please choose an option--</option>	
+			<option value="Volvo">Volvo</option>
+			<option value="Saab">Saab</option>
+			<option value="Opel">Opel</option>
+			<option value="Audi">Audi</option>
+		</select><br>
+		<label for="age">Age</label> 
+		<input type="number" required id="age" placeholder="Age"><br>
+		<label for="DOB">DOB<br>
+		<input type="date" required id="DOB"><br>
+		<label for="tel">Phone Number</label>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br>
+		<label for="password">Password</label>	
+		<input type="password" required id="password" placeholder="Password"><br>
+		<label for="tos">I agree to TOS</label>	
+		<input type="checkbox" required id="tos"><br>
+		<button type="submit">Submit</button>	
+	 </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
